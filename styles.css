@@ -344,7 +344,22 @@ body.present #stage { left: 0; padding: 0; }
 .btn-solid { background: var(--navy); color: #fff; border-color: var(--navy); }
 .editor-note { padding: 14px 28px 0; margin: 0; color: var(--muted); font-size: 13.5px; }
 .editor-note code { background: #F0F3F8; padding: 1px 6px; border-radius: 4px; }
+.editor-note strong { color: var(--navy); }
 #editor-body { padding: 18px 28px 28px; overflow-y: auto; }
+
+/* GitHub publish config panel */
+.gh-config { margin: 14px 28px 0; padding: 16px 18px; border: 1px solid var(--line); border-radius: 10px; background: #F7F9FC; }
+.gh-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+.gh-grid label { display: flex; flex-direction: column; gap: 5px; font-size: 12.5px; color: var(--muted); }
+.gh-grid label.gh-wide { grid-column: 1 / -1; }
+.gh-grid label em { color: var(--navy); font-style: normal; font-weight: 600; }
+.gh-config input[type=text], .gh-config input[type=password] { font-family: inherit; font-size: 13.5px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink); }
+.gh-config input:focus { outline: 2px solid var(--navy); outline-offset: -1px; }
+.gh-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+.gh-check { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink); }
+.gh-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.gh-status { margin: 10px 0 0; font-size: 12.5px; color: var(--navy); min-height: 16px; }
+.gh-warn { margin: 6px 0 0; font-size: 12px; color: var(--red, #b23); }
 
 .ed-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
 .ed-tab { padding: 8px 14px; border-radius: 8px; background: #F3F5FA; border: 1px solid var(--line); cursor: pointer; font-size: 13px; color: var(--ink); font-family: inherit; }
