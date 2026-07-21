@@ -1,0 +1,42 @@
+{
+  "_comment": "Editable area mapping. directAreaMap: internal Area code -> exec area. usageAreaMap: system Area/Usage -> exec area. Edit here or in the Data Editor.",
+  "directAreaMap": {
+    "AGF": "Funds Operations",
+    "Corredora": "Wealth Management",
+    "Corporativo": "Wealth Management",
+    "BI": "BI/Reporting",
+    "Tesoreria": "Treasury",
+    "Tesorería": "Treasury",
+    "Contabilidad Sociedades": "Funds Operations",
+    "Contabilidad Fondos": "Funds Operations",
+    "Contabilidad": "Funds Operations",
+    "RRHH": "Corporate/Other",
+    "CDG": "Corporate/Other",
+    "Private equities": "Investments/PM",
+    "AGF-Corredora": "Funds Operations"
+  },
+  "usageAreaMap": {
+    "Funds Administration": "Funds Operations",
+    "Wealth Management": "Wealth Management",
+    "Accounting": "Funds Operations",
+    "BI": "BI/Reporting",
+    "Legal & Compliance": "Risk & Compliance",
+    "Compliance": "Risk & Compliance",
+    "Investor Channels": "Investments/PM",
+    "Client Onboarding": "Wealth Management",
+    "Commercial & Investment": "Investments/PM",
+    "Research": "Investments/PM",
+    "ERP Corporate": "Corporate/Other",
+    "Infra & Base Software": "Corporate/Other"
+  },
+  "areasOrder": [
+    "Funds Operations",
+    "Wealth Management",
+    "Treasury",
+    "Investments/PM",
+    "Risk & Compliance",
+    "BI/Reporting",
+    "Corporate/Other",
+    "Unclassified"
+  ]
+}

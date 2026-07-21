@@ -477,3 +477,91 @@ body.present #stage { left: 0; padding: 0; }
 }
 .nosup-note .crit-mini { display: inline-flex; }
 .nosup-note .crit-mini .cb-ic { width: 14px; height: 14px; color: var(--red); vertical-align: middle; }
+
+/* ============================================================
+   Module 6 — Providers & Gap (vendor support model)
+   ============================================================ */
+.pg-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; margin-top: 14px; }
+.pg-col { display: flex; flex-direction: column; gap: 14px; min-height: 0; }
+.pg-card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
+  padding: 16px 22px; box-shadow: 0 2px 12px rgba(10,20,60,.05);
+  display: flex; flex-direction: column;
+}
+.pg-ch { margin-bottom: 11px; }
+.pg-ch h2 { font-size: 25px; font-weight: 800; color: var(--navy); margin: 0; }
+.pg-ch span { display: block; font-size: 14px; color: var(--muted); margin-top: 3px; line-height: 1.25; }
+
+/* Actus capacity — 2x2 stat grid */
+.pg-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.pg-stat { background: var(--card-bg); border: 1px solid var(--line); border-radius: 11px; padding: 12px 16px; }
+.pg-stat .ps-num { font-size: 34px; font-weight: 800; line-height: 1; }
+.pg-stat .ps-num.navy { color: var(--navy); }
+.pg-stat .ps-num.teal { color: var(--teal); }
+.pg-stat .ps-num.orange { color: var(--orange); }
+.pg-stat .ps-lbl { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.2; }
+
+/* Monthly cost view */
+.pg-cost-head { font-size: 14px; font-weight: 800; color: var(--navy); text-transform: uppercase; letter-spacing: .8px; margin: 16px 0 10px; }
+.pg-cost { display: flex; flex-direction: column; gap: 9px; }
+.pg-cost-row { display: grid; grid-template-columns: 78px 1fr 84px; align-items: center; gap: 12px; }
+.pg-cost-row .cr-lbl { font-size: 14px; font-weight: 700; color: var(--ink); }
+.pg-cost-row .cr-track { height: 14px; background: #EEF2F8; border-radius: 5px; overflow: hidden; }
+.pg-cost-row .cr-fill { display: block; height: 100%; border-radius: 5px; }
+.pg-cost-row .cr-fill.navy { background: var(--navy); }
+.pg-cost-row .cr-fill.teal { background: var(--teal); }
+.pg-cost-row .cr-fill.orange { background: var(--orange); }
+.pg-cost-row .cr-val { font-size: 14px; font-weight: 800; color: var(--navy2); text-align: right; }
+.pg-note { font-size: 12.5px; color: var(--muted); margin-top: 11px; line-height: 1.28; }
+
+/* HH dedication split */
+.pg-ded-bar { display: flex; height: 26px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+.pg-ded-seg { height: 100%; }
+.pg-ded-legend { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; margin-top: 14px; }
+.pg-ded-item { display: flex; align-items: center; gap: 8px; font-size: 15px; }
+.pg-ded-item .dl-dot { width: 12px; height: 12px; border-radius: 3px; flex: none; }
+.pg-ded-item .dl-name { color: var(--ink); font-weight: 600; }
+.pg-ded-item .dl-pct { margin-left: auto; font-weight: 800; color: var(--navy); }
+
+/* Support gap rows */
+.pg-gap { display: flex; flex-direction: column; gap: 6px; }
+.pg-gap-row {
+  display: grid; grid-template-columns: 1fr 48px auto; align-items: center; gap: 12px;
+  background: var(--card-bg); border: 1px solid var(--line); border-left: 5px solid var(--gc);
+  border-radius: 9px; padding: 7px 14px;
+}
+.pg-gap-row .gr-name { font-size: 17px; font-weight: 700; color: var(--ink); }
+.pg-gap-row .gr-count { background: var(--gc); color: #fff; font-weight: 800; font-size: 15px; text-align: center; border-radius: 7px; padding: 4px 0; }
+.pg-gap-row .gr-count.muted { background: var(--gray); }
+.pg-gap-row .gr-note { font-size: 13px; color: var(--muted); font-weight: 600; justify-self: end; }
+.pg-gap-row .gr-note.no { color: var(--red); }
+.pg-gap-headline {
+  margin-top: 11px; background: #FBF6E9; border: 1px solid #F0E2BE; border-radius: 9px;
+  padding: 9px 14px; font-size: 13.5px; color: #7A5E12; font-weight: 600; line-height: 1.3;
+}
+.pg-gap-headline b { color: var(--orange); font-weight: 800; }
+
+/* Need for more support */
+.pg-needs { display: flex; flex-direction: column; gap: 12px; }
+.pg-need { display: grid; grid-template-columns: 30px 1fr; gap: 13px; align-items: start; }
+.pg-need .pn-n { width: 28px; height: 28px; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 14px; }
+.pg-need .pn-t { font-size: 17px; font-weight: 800; color: var(--navy); line-height: 1.1; }
+.pg-need .pn-d { font-size: 13.5px; color: var(--gray); margin-top: 4px; line-height: 1.3; }
+
+/* Technical debt */
+.pg-debts { display: flex; flex-direction: column; gap: 9px; }
+.pg-debt { display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start; }
+.pg-debt .pd-ic { width: 22px; height: 22px; color: var(--red); margin-top: 1px; }
+.pg-debt .pd-t { font-size: 16px; font-weight: 800; color: var(--ink); line-height: 1.1; }
+.pg-debt .pd-d { font-size: 13px; color: var(--gray); margin-top: 3px; line-height: 1.28; }
+
+/* Decision ask box */
+.pg-decision { background: var(--navy); color: #fff; border-radius: 14px; padding: 20px 24px; }
+.pg-decision .pd-tag {
+  display: inline-block; text-transform: uppercase; letter-spacing: 1.4px; font-size: 13px; font-weight: 800;
+  background: rgba(255,255,255,.15); padding: 6px 14px; border-radius: 8px; margin-bottom: 12px;
+}
+.pg-decision .pd-msg { display: block; font-size: 16px; font-weight: 600; line-height: 1.35; }
+
+/* On the Providers slide the executive banner sits inside the flow, not pinned. */
+.pg-cols + .banner.exec { position: static; margin: 14px 0 0; left: auto; right: auto; bottom: auto; padding: 16px 26px; }

@@ -63,7 +63,76 @@
     { slide: 'Automation slides (shared)', key: 'grp.diagHead', label: 'Diagram rail head', value: 'How it works' },
     { slide: 'Automation slides (shared)', key: 'grp.execTag', label: 'Executive banner tag', value: 'Executive message' },
 
-    // Module 6 — Next steps
+    // Module 6 — Providers & Gap (vendor support model)
+    { slide: 'Providers & Gap', key: 'pg.eyebrow', label: 'Eyebrow', value: 'PROVIDERS & GAP · VENDOR SUPPORT MODEL' },
+    { slide: 'Providers & Gap', key: 'pg.title', label: 'Title', value: 'Providers & Gap' },
+    { slide: 'Providers & Gap', key: 'pg.subtitle', label: 'Subtitle', value: 'Where development effort goes today, the coverage gap in production, and the HH needed to sustain continuity' },
+    // -- Actus capacity --
+    { slide: 'Providers & Gap', key: 'pg.capHead', label: 'Capacity · title', value: 'Actus capacity' },
+    { slide: 'Providers & Gap', key: 'pg.capSub', label: 'Capacity · subtitle', value: 'Current contract vs. proposed expansion' },
+    { slide: 'Providers & Gap', key: 'pg.capCurrent', label: 'Capacity · current HH', value: '360' },
+    { slide: 'Providers & Gap', key: 'pg.capCurrentLbl', label: 'Capacity · current HH label', value: 'HH / month today' },
+    { slide: 'Providers & Gap', key: 'pg.capProposed', label: 'Capacity · proposed HH', value: '550' },
+    { slide: 'Providers & Gap', key: 'pg.capProposedLbl', label: 'Capacity · proposed HH label', value: 'HH / month proposed' },
+    { slide: 'Providers & Gap', key: 'pg.capAdd', label: 'Capacity · added HH', value: '+190' },
+    { slide: 'Providers & Gap', key: 'pg.capAddLbl', label: 'Capacity · added HH label', value: 'additional HH / month' },
+    { slide: 'Providers & Gap', key: 'pg.capPct', label: 'Capacity · % increase', value: '+53%' },
+    { slide: 'Providers & Gap', key: 'pg.capPctLbl', label: 'Capacity · % increase label', value: 'capacity increase' },
+    { slide: 'Providers & Gap', key: 'pg.costHead', label: 'Capacity · cost title', value: 'Monthly cost view' },
+    { slide: 'Providers & Gap', key: 'pg.costCurrentLbl', label: 'Cost · current label', value: 'Current' },
+    { slide: 'Providers & Gap', key: 'pg.costCurrent', label: 'Cost · current', value: 'USD 17.7K' },
+    { slide: 'Providers & Gap', key: 'pg.costProposedLbl', label: 'Cost · proposed label', value: 'Proposed' },
+    { slide: 'Providers & Gap', key: 'pg.costProposed', label: 'Cost · proposed', value: 'USD 27.0K' },
+    { slide: 'Providers & Gap', key: 'pg.costIncreaseLbl', label: 'Cost · increase label', value: 'Increase' },
+    { slide: 'Providers & Gap', key: 'pg.costIncrease', label: 'Cost · increase', value: '+USD 9.3K' },
+    { slide: 'Providers & Gap', key: 'pg.opexNote', label: 'Capacity · OPEX note', value: 'Additional 2026 OPEX referenced: ~USD 70K through Dec-2026.' },
+    // -- HH dedication (current mix) --
+    { slide: 'Providers & Gap', key: 'pg.dedHead', label: 'Dedication · title', value: 'Current HH dedication' },
+    { slide: 'Providers & Gap', key: 'pg.dedSub', label: 'Dedication · subtitle', value: 'How the 360 HH/month are consumed today' },
+    { slide: 'Providers & Gap', key: 'pg.dedEvoLbl', label: 'Dedication · Evolutivos label', value: 'Evolutivos' },
+    { slide: 'Providers & Gap', key: 'pg.dedEvoPct', label: 'Dedication · Evolutivos %', value: '70' },
+    { slide: 'Providers & Gap', key: 'pg.dedCorLbl', label: 'Dedication · Correctivos label', value: 'Correctivos' },
+    { slide: 'Providers & Gap', key: 'pg.dedCorPct', label: 'Dedication · Correctivos %', value: '5' },
+    { slide: 'Providers & Gap', key: 'pg.dedOndLbl', label: 'Dedication · OnDemand label', value: 'OnDemand' },
+    { slide: 'Providers & Gap', key: 'pg.dedOndPct', label: 'Dedication · OnDemand %', value: '10' },
+    { slide: 'Providers & Gap', key: 'pg.dedCybLbl', label: 'Dedication · Cyber label', value: 'Cyber' },
+    { slide: 'Providers & Gap', key: 'pg.dedCybPct', label: 'Dedication · Cyber %', value: '15' },
+    { slide: 'Providers & Gap', key: 'pg.dedNote', label: 'Dedication · note', value: 'Capacity is fully committed — there is no slack to formally absorb the unsupported platforms.' },
+    // -- Support gap --
+    { slide: 'Providers & Gap', key: 'pg.gapHead', label: 'Support gap · title', value: 'Support gap' },
+    { slide: 'Providers & Gap', key: 'pg.gapSub', label: 'Support gap · subtitle', value: 'Production platforms & processes without formal coverage' },
+    { slide: 'Providers & Gap', key: 'pg.gapWebLbl', label: 'Support gap · websites label', value: 'Websites' },
+    { slide: 'Providers & Gap', key: 'pg.gapWebCount', label: 'Support gap · websites count', value: '15' },
+    { slide: 'Providers & Gap', key: 'pg.gapWebNote', label: 'Support gap · websites note', value: 'Extra-official Actus support' },
+    { slide: 'Providers & Gap', key: 'pg.gapHeadTpl', label: 'Support gap · headline', value: 'integrations/processes + {web} websites now in production require regularised coverage.' },
+    // -- Need for more support --
+    { slide: 'Providers & Gap', key: 'pg.needHead', label: 'Need · title', value: 'Need for more support' },
+    { slide: 'Providers & Gap', key: 'pg.needSub', label: 'Need · subtitle', value: 'Why the additional HH matters' },
+    { slide: 'Providers & Gap', key: 'pg.need1t', label: 'Need · 1 title', value: 'Key-person dependency' },
+    { slide: 'Providers & Gap', key: 'pg.need1d', label: 'Need · 1 desc', value: 'The developers who keep Sensedia, n8n, Fluig and UiPath running are few and hard to replace — losing one stalls production support.' },
+    { slide: 'Providers & Gap', key: 'pg.need2t', label: 'Need · 2 title', value: 'No formal AMS model' },
+    { slide: 'Providers & Gap', key: 'pg.need2d', label: 'Need · 2 desc', value: 'These platforms were handed to production without a formal application-management / support model behind them.' },
+    { slide: 'Providers & Gap', key: 'pg.need3t', label: 'Need · 3 title', value: 'Current scope mismatch' },
+    { slide: 'Providers & Gap', key: 'pg.need3d', label: 'Need · 3 desc', value: 'The 360 HH were sized for evolutives, correctives, on-demand and cyber — not for covering the unsupported platforms.' },
+    { slide: 'Providers & Gap', key: 'pg.need4t', label: 'Need · 4 title', value: 'Operational continuity' },
+    { slide: 'Providers & Gap', key: 'pg.need4d', label: 'Need · 4 desc', value: 'The coverage gap creates real risk for incidents, monitoring and clean production handover.' },
+    // -- Technical debt --
+    { slide: 'Providers & Gap', key: 'pg.debtHead', label: 'Tech debt · title', value: 'Technical debt' },
+    { slide: 'Providers & Gap', key: 'pg.debtSub', label: 'Tech debt · subtitle', value: 'Accumulated gaps that raise operational risk' },
+    { slide: 'Providers & Gap', key: 'pg.debt1t', label: 'Tech debt · 1 title', value: 'Processes without alerting' },
+    { slide: 'Providers & Gap', key: 'pg.debt1d', label: 'Tech debt · 1 desc', value: 'Many flows have no proactive alerts, so failures are found after the business impact — not before.' },
+    { slide: 'Providers & Gap', key: 'pg.debt2t', label: 'Tech debt · 2 title', value: 'Processes without logs (n8n)' },
+    { slide: 'Providers & Gap', key: 'pg.debt2d', label: 'Tech debt · 2 desc', value: 'Platforms like n8n run without proper logging or traceability, making incident root-cause analysis slow.' },
+    { slide: 'Providers & Gap', key: 'pg.debt3t', label: 'Tech debt · 3 title', value: 'No development standards' },
+    { slide: 'Providers & Gap', key: 'pg.debt3d', label: 'Tech debt · 3 desc', value: 'No shared standards for building and handing over automations — this deepens key-person dependency and rework.' },
+    // -- Decision & executive message --
+    { slide: 'Providers & Gap', key: 'pg.decTag', label: 'Decision · tag', value: 'Decision ask' },
+    { slide: 'Providers & Gap', key: 'pg.decMsg', label: 'Decision · message', value: 'Approve the expanded Actus scope from 360 to 550 HH/month to regularise coverage for unsupported platforms and begin paying down technical debt.' },
+    { slide: 'Providers & Gap', key: 'pg.execTag', label: 'Executive · tag', value: 'Executive message' },
+    { slide: 'Providers & Gap', key: 'pg.execMsg', label: 'Executive · message', value: 'The current 360 HH model is fully consumed by evolutives, correctives, on-demand and cyber — it does not formally cover the platforms and websites now running in production. More HH is what protects operational continuity.' },
+    { slide: 'Providers & Gap', key: 'pg.foot', label: 'Footer', value: 'Prepared for the Head of Technology · Providers & Gap' },
+
+    // Module 7 — Next steps
     { slide: 'Next steps', key: 'close.eyebrow', label: 'Eyebrow', value: 'NEXT STEPS' },
     { slide: 'Next steps', key: 'close.title', label: 'Title', value: 'Where we go next' },
     { slide: 'Next steps', key: 'close.subtitle', label: 'Subtitle', value: 'Three concrete moves coming out of this landscape review' },
@@ -388,7 +457,7 @@
       function ns(sys) { return noSup.some(function (n) { return String(n).toLowerCase() === String(sys).toLowerCase(); }); }
       var statusCell;
       if (g.id === 'other-jobs') {
-        statusCell = '<span class="pill a">Owned by infra teams</span>';
+        statusCell = '<span class="pill a">Supported by infra teams</span>';
       } else {
         var ok = pts.filter(function (p) { return !ns(p.system); }).map(function (p) { return p.system; });
         var no = pts.filter(function (p) { return ns(p.system); }).map(function (p) { return p.system; });
@@ -503,7 +572,149 @@
       '</div>' + foot('Prepared for the Head of Technology · Automations — ' + group.title, page);
   }
 
-  // ---- Module 6: Next steps ----
+  // ---- Module 6: Providers & Gap (vendor support model) ----
+  function pgNum(v) {
+    var n = parseFloat(String(v == null ? '' : v).replace(/[^0-9.]/g, ''));
+    return isNaN(n) ? 0 : n;
+  }
+  function renderProviders(page) {
+    // ---- Support gap: platform counts derived LIVE from the process rows ----
+    var noFormal = data.noFormalSupport || [];
+    var plats = (data.dashboard && data.dashboard.platforms) || [];
+    function countOf(name) {
+      var p = plats.find(function (x) { return sysKey(x.label) === sysKey(name); });
+      return p ? p.count : 0;
+    }
+    var GAP_COLOR = {
+      'sensedia': 'var(--navy2)', 'n8n': '#6C5CE7', 'fluig': 'var(--amber)',
+      'uipath': 'var(--teal)', 'blueprism': 'var(--navy)', 'power automate': 'var(--orange)'
+    };
+    var gapRows = noFormal.map(function (name) {
+      var c = countOf(name);
+      var col = GAP_COLOR[sysKey(name)] || 'var(--navy2)';
+      return '<div class="pg-gap-row" style="--gc:' + col + '">' +
+        '<span class="gr-name">' + esc(name) + '</span>' +
+        '<span class="gr-count">' + c + '</span>' +
+        '<span class="gr-note no">No formal support</span></div>';
+    }).join('');
+    var web = pgNum(T('pg.gapWebCount'));
+    gapRows += '<div class="pg-gap-row" style="--gc:var(--gray)">' +
+      '<span class="gr-name">' + esc(T('pg.gapWebLbl')) + '</span>' +
+      '<span class="gr-count muted">' + web + '</span>' +
+      '<span class="gr-note">' + esc(T('pg.gapWebNote')) + '</span></div>';
+    var liveSum = noFormal.reduce(function (s, n) { return s + countOf(n); }, 0);
+    var rounded = Math.max(10, Math.floor(liveSum / 10) * 10);
+    var gapHeadline = '<b>' + rounded + '+</b> ' + esc(T('pg.gapHeadTpl')).replace('{web}', '<b>' + web + '</b>');
+
+    // ---- Actus capacity: 2x2 stat grid ----
+    var stats = [
+      [T('pg.capCurrent'), T('pg.capCurrentLbl'), 'teal'],
+      [T('pg.capProposed'), T('pg.capProposedLbl'), 'navy'],
+      [T('pg.capAdd'), T('pg.capAddLbl'), 'orange'],
+      [T('pg.capPct'), T('pg.capPctLbl'), 'orange']
+    ];
+    var statGrid = stats.map(function (s) {
+      return '<div class="pg-stat"><div class="ps-num ' + s[2] + '">' + esc(s[0]) + '</div>' +
+        '<div class="ps-lbl">' + esc(s[1]) + '</div></div>';
+    }).join('');
+
+    // ---- Monthly cost view: mini bars scaled to the largest value ----
+    var costs = [
+      [T('pg.costCurrentLbl'), T('pg.costCurrent'), 'teal'],
+      [T('pg.costProposedLbl'), T('pg.costProposed'), 'navy'],
+      [T('pg.costIncreaseLbl'), T('pg.costIncrease'), 'orange']
+    ];
+    var costMax = Math.max.apply(null, costs.map(function (c) { return pgNum(c[1]); }).concat([1]));
+    var costRows = costs.map(function (c) {
+      var w = (pgNum(c[1]) / costMax * 100).toFixed(1);
+      return '<div class="pg-cost-row"><span class="cr-lbl">' + esc(c[0]) + '</span>' +
+        '<span class="cr-track"><span class="cr-fill ' + c[2] + '" style="width:' + w + '%"></span></span>' +
+        '<span class="cr-val">' + esc(c[1]) + '</span></div>';
+    }).join('');
+
+    // ---- HH dedication split ----
+    var ded = [
+      [T('pg.dedEvoLbl'), pgNum(T('pg.dedEvoPct')), 'var(--navy)'],
+      [T('pg.dedCorLbl'), pgNum(T('pg.dedCorPct')), 'var(--teal)'],
+      [T('pg.dedOndLbl'), pgNum(T('pg.dedOndPct')), 'var(--orange)'],
+      [T('pg.dedCybLbl'), pgNum(T('pg.dedCybPct')), 'var(--red)']
+    ];
+    var dedSum = ded.reduce(function (s, d) { return s + d[1]; }, 0) || 1;
+    var dedBar = ded.map(function (d) {
+      return '<div class="pg-ded-seg" style="width:' + (d[1] / dedSum * 100).toFixed(1) + '%;background:' + d[2] + '" title="' + esc(d[0]) + ' ' + d[1] + '%"></div>';
+    }).join('');
+    var dedLegend = ded.map(function (d) {
+      return '<div class="pg-ded-item"><span class="dl-dot" style="background:' + d[2] + '"></span>' +
+        '<span class="dl-name">' + esc(d[0]) + '</span><span class="dl-pct">' + d[1] + '%</span></div>';
+    }).join('');
+
+    // ---- Need for more support (numbered reasons) ----
+    var needs = [
+      [T('pg.need1t'), T('pg.need1d')], [T('pg.need2t'), T('pg.need2d')],
+      [T('pg.need3t'), T('pg.need3d')], [T('pg.need4t'), T('pg.need4d')]
+    ];
+    var needHtml = needs.map(function (n, i) {
+      return '<div class="pg-need"><div class="pn-n">' + (i + 1) + '</div>' +
+        '<div><div class="pn-t">' + esc(n[0]) + '</div><div class="pn-d">' + esc(n[1]) + '</div></div></div>';
+    }).join('');
+
+    // ---- Technical debt ----
+    var debts = [
+      [T('pg.debt1t'), T('pg.debt1d')], [T('pg.debt2t'), T('pg.debt2d')], [T('pg.debt3t'), T('pg.debt3d')]
+    ];
+    var debtHtml = debts.map(function (d) {
+      return '<div class="pg-debt">' + icon('ic-alert', 'pd-ic') +
+        '<div><div class="pd-t">' + esc(d[0]) + '</div><div class="pd-d">' + esc(d[1]) + '</div></div></div>';
+    }).join('');
+
+    return eyebrow(T('pg.eyebrow')) +
+      '<div class="s-body">' +
+        '<h1 class="s-title rule">' + esc(T('pg.title')) + '</h1>' +
+        '<p class="s-sub">' + esc(T('pg.subtitle')) + '</p>' +
+        '<div class="pg-cols">' +
+          // Column 1 — Actus capacity + HH dedication
+          '<div class="pg-col">' +
+            '<div class="pg-card">' +
+              '<div class="pg-ch"><h2>' + esc(T('pg.capHead')) + '</h2><span>' + esc(T('pg.capSub')) + '</span></div>' +
+              '<div class="pg-stat-grid">' + statGrid + '</div>' +
+              '<div class="pg-cost-head">' + esc(T('pg.costHead')) + '</div>' +
+              '<div class="pg-cost">' + costRows + '</div>' +
+              '<div class="pg-note">' + esc(T('pg.opexNote')) + '</div>' +
+            '</div>' +
+            '<div class="pg-card">' +
+              '<div class="pg-ch"><h2>' + esc(T('pg.dedHead')) + '</h2><span>' + esc(T('pg.dedSub')) + '</span></div>' +
+              '<div class="pg-ded-bar">' + dedBar + '</div>' +
+              '<div class="pg-ded-legend">' + dedLegend + '</div>' +
+              '<div class="pg-note">' + esc(T('pg.dedNote')) + '</div>' +
+            '</div>' +
+          '</div>' +
+          // Column 2 — Support gap + Technical debt
+          '<div class="pg-col">' +
+            '<div class="pg-card">' +
+              '<div class="pg-ch"><h2>' + esc(T('pg.gapHead')) + '</h2><span>' + esc(T('pg.gapSub')) + '</span></div>' +
+              '<div class="pg-gap">' + gapRows + '</div>' +
+              '<div class="pg-gap-headline">' + gapHeadline + '</div>' +
+            '</div>' +
+            '<div class="pg-card">' +
+              '<div class="pg-ch"><h2>' + esc(T('pg.debtHead')) + '</h2><span>' + esc(T('pg.debtSub')) + '</span></div>' +
+              '<div class="pg-debts">' + debtHtml + '</div>' +
+            '</div>' +
+          '</div>' +
+          // Column 3 — Need for more support + Decision ask
+          '<div class="pg-col">' +
+            '<div class="pg-card">' +
+              '<div class="pg-ch"><h2>' + esc(T('pg.needHead')) + '</h2><span>' + esc(T('pg.needSub')) + '</span></div>' +
+              '<div class="pg-needs">' + needHtml + '</div>' +
+            '</div>' +
+            '<div class="pg-decision"><span class="pd-tag">' + esc(T('pg.decTag')) + '</span>' +
+              '<span class="pd-msg">' + esc(T('pg.decMsg')) + '</span></div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="banner exec"><span class="b-tag">' + esc(T('pg.execTag')) + '</span><span class="b-msg">' + esc(T('pg.execMsg')) + '</span></div>' +
+      '</div>' + foot(T('pg.foot'), page);
+  }
+
+  // ---- Module 7: Next steps ----
   function renderClosing(page) {
     var steps = data.nextSteps.map(function (s, i) {
       return '<div class="step"><div class="st-n">' + (i + 1) + '</div>' +
@@ -529,6 +740,7 @@
     data.groups.forEach(function (g) {
       mods.push({ label: 'Automations · ' + shortTitle(g.title), render: function (p) { return renderGroup(g, p); } });
     });
+    mods.push({ label: 'Providers & Gap', render: renderProviders });
     mods.push({ label: 'Next steps', render: renderClosing });
     return mods;
   }
@@ -722,11 +934,18 @@
   // btoa only handles Latin-1; the dataset has accents, so encode UTF-8 first.
   function utf8ToBase64(str) { return btoa(unescape(encodeURIComponent(str))); }
   function ghErrMsg(res, bodyMsg) {
-    if (res.status === 401) return 'token inválido o expirado (401)';
-    if (res.status === 403) return 'sin permiso o límite de peticiones (403)';
-    if (res.status === 404) return 'repo, rama o ruta no encontrada (404) — revisa la config';
+    var extra = bodyMsg ? ' — ' + bodyMsg : '';
+    var rl = (res.headers && res.headers.get) ? res.headers.get('x-ratelimit-remaining') : null;
+    if (res.status === 401) return 'token inválido o expirado (401)' + extra;
+    if (res.status === 403) {
+      if (rl === '0') return 'límite de peticiones alcanzado (403) — espera unos minutos';
+      // Almost always: fine-grained token without "Contents: Read and write" on this repo,
+      // or a classic token without the "repo" scope, or pending org/SSO approval.
+      return 'el token no tiene permiso de escritura (403)' + (extra || ' — dale "Contents: Read and write" sobre el repo Tools');
+    }
+    if (res.status === 404) return 'repo, rama o ruta no encontrada, o el token no ve este repo (404)' + extra;
     if (res.status === 409) return 'conflicto de versión (409) — reintenta';
-    if (res.status === 422) return 'datos inválidos (422) — ' + (bodyMsg || '');
+    if (res.status === 422) return 'datos inválidos (422)' + extra;
     return bodyMsg || ('HTTP ' + res.status);
   }
 
