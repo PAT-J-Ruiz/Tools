@@ -822,16 +822,6 @@
     var s = document.getElementById('gh-status'); if (s) s.textContent = 'Token borrado de este navegador.';
   }
 
-  // Backup export — download a ready-to-commit data.js by hand (offline fallback).
-  function downloadDataJs() {
-    var blob = new Blob([serializeDataJs()], { type: 'text/javascript;charset=utf-8' });
-    var a = document.createElement('a');
-    a.download = 'data.js';
-    a.href = URL.createObjectURL(blob);
-    a.click();
-    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1500);
-  }
-
   // Backup export — download the current dataset as pretty JSON.
   function exportDataset() {
     var btn = document.getElementById('btn-export-data');
@@ -1118,7 +1108,7 @@
   bindIfPresent('btn-gh-settings', function () { openGhConfig(); });
   bindIfPresent('gh-save', saveGhConfig);
   bindIfPresent('gh-forget', forgetGhToken);
-  bindIfPresent('gh-download', downloadDataJs);
+  bindIfPresent('gh-close', function () { var p = document.getElementById('gh-config'); if (p) p.hidden = true; });
   function bindIfPresent(id, fn) { var el = document.getElementById(id); if (el) el.addEventListener('click', fn); }
 
   // Warn before leaving with unsaved edits (they no longer survive a reload).
@@ -1127,8 +1117,22 @@
   });
   editorOverlay.addEventListener('click', function (e) { if (e.target === editorOverlay) closeEditor(); });
 
+  // Close the GitHub popover on outside click (but not when toggling it via ⚙).
+  document.addEventListener('click', function (e) {
+    var pop = document.getElementById('gh-config');
+    if (!pop || pop.hidden) return;
+    if (pop.contains(e.target)) return;
+    if (e.target.closest && e.target.closest('#btn-gh-settings')) return;
+    pop.hidden = true;
+  });
+
+  function ghPopOpen() { var p = document.getElementById('gh-config'); return p && !p.hidden; }
   document.addEventListener('keydown', function (e) {
-    if (!editorOverlay.hidden) { if (e.key === 'Escape') closeEditor(); return; }
+    if (!editorOverlay.hidden) {
+      // Escape closes the GitHub popover first, then the editor.
+      if (e.key === 'Escape') { if (ghPopOpen()) { document.getElementById('gh-config').hidden = true; } else { closeEditor(); } }
+      return;
+    }
     if (e.key === 'Escape') { setPresent(false); return; }
     if (e.key === 'ArrowRight' || e.key === 'PageDown') go(current + 1);
     else if (e.key === 'ArrowLeft' || e.key === 'PageUp') go(current - 1);

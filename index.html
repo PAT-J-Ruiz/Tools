@@ -75,25 +75,30 @@
       </header>
       <p class="editor-note">Los cambios se aplican a las diapositivas en vivo. <strong>Publicar a GitHub</strong> hace commit de <code>data.js</code> al repo <code>PAT-J-Ruiz/Tools</code>; GitHub Pages se reconstruye solo en ~1 min. Solo debes pegar tu token una vez en <strong>⚙ GitHub</strong>. <strong>Exportar dataset</strong> descarga un respaldo JSON.</p>
 
-      <!-- GitHub publish configuration (stored only in this browser, never in the repo) -->
-      <div id="gh-config" class="gh-config" hidden>
-        <div class="gh-grid">
-          <label>Owner (usuario/org)<input id="gh-owner" type="text" placeholder="mi-usuario" autocomplete="off" spellcheck="false" /></label>
-          <label>Repositorio<input id="gh-repo" type="text" placeholder="mi-repo" autocomplete="off" spellcheck="false" /></label>
-          <label>Rama<input id="gh-branch" type="text" placeholder="main" autocomplete="off" spellcheck="false" /></label>
-          <label>Ruta del archivo<input id="gh-path" type="text" placeholder="data.js" autocomplete="off" spellcheck="false" /></label>
-          <label class="gh-wide">Token de acceso (fine-grained, permiso <em>Contents: Read and write</em> en este repo)<input id="gh-token" type="password" placeholder="github_pat_…" autocomplete="off" spellcheck="false" /></label>
+      <!-- GitHub publish configuration — floating popover, set once (token only) -->
+      <div id="gh-config" class="gh-config" role="dialog" aria-label="Configuración de GitHub" hidden>
+        <div class="gh-pop-head">
+          <span class="gh-pop-title">Publicar a GitHub</span>
+          <button id="gh-close" class="gh-x" type="button" aria-label="Cerrar">×</button>
         </div>
-        <div class="gh-row">
-          <label class="gh-check"><input id="gh-remember" type="checkbox" /> Recordar token en este navegador</label>
-          <span class="gh-actions">
-            <button id="gh-forget" class="btn-ghost" type="button">Olvidar token</button>
-            <button id="gh-download" class="btn-ghost" type="button" title="Descargar data.js para subirlo a mano">Descargar data.js</button>
-            <button id="gh-save" class="btn-solid" type="button">Guardar configuración</button>
-          </span>
+        <label class="gh-token-lbl">Token de acceso
+          <input id="gh-token" type="password" placeholder="github_pat_…" autocomplete="off" spellcheck="false" />
+        </label>
+        <label class="gh-check"><input id="gh-remember" type="checkbox" /> Recordar en este navegador</label>
+        <details class="gh-adv">
+          <summary>Avanzado · repositorio</summary>
+          <div class="gh-grid">
+            <label>Owner<input id="gh-owner" type="text" autocomplete="off" spellcheck="false" /></label>
+            <label>Repo<input id="gh-repo" type="text" autocomplete="off" spellcheck="false" /></label>
+            <label>Rama<input id="gh-branch" type="text" autocomplete="off" spellcheck="false" /></label>
+            <label>Ruta<input id="gh-path" type="text" autocomplete="off" spellcheck="false" /></label>
+          </div>
+        </details>
+        <div class="gh-actions">
+          <button id="gh-forget" class="btn-ghost" type="button">Olvidar token</button>
+          <button id="gh-save" class="btn-solid" type="button">Guardar</button>
         </div>
         <p id="gh-status" class="gh-status" role="status"></p>
-        <p class="gh-warn">⚠ El token da acceso de escritura a tu repo. Nunca lo compartas ni lo subas al repositorio; se guarda solo en este navegador.</p>
       </div>
       <div id="editor-body"><!-- rendered by app.js --></div>
     </div>
