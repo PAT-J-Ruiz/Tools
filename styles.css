@@ -144,6 +144,17 @@ body.present #stage { left: 0; padding: 0; }
 .kpi-meta .k-lbl { font-size: 18px; font-weight: 700; color: var(--ink); line-height: 1.15; }
 .kpi-meta .k-desc { font-size: 15px; color: var(--muted); margin-top: 6px; line-height: 1.25; }
 
+/* Dashboard: after removing the type mix + decision banner, vertically centre
+   the KPI row and the two panels so the slide reads balanced, not top-heavy. */
+.dash-fill { display: flex; flex-direction: column; justify-content: center; gap: 30px; min-height: 786px; margin-top: 18px; }
+.dash-fill .kpi-row { margin-top: 0; }
+.dash-fill .panels.dash { margin-top: 0; }
+.dash-fill .kpi-card { padding: 26px 28px; }
+.dash-fill .barlist { gap: 16px; margin-top: 6px; }
+.dash-fill .bartrack { height: 22px; }
+.dash-fill .heat td { padding: 10px 10px; }
+.dash-fill .heat th { padding-bottom: 12px; }
+
 /* Two-panel grid */
 .panels { display: grid; gap: 28px; margin-top: 24px; }
 .panels.two { grid-template-columns: 1fr 1fr; }
@@ -481,14 +492,14 @@ body.present #stage { left: 0; padding: 0; }
 /* ============================================================
    Module 6 — Providers & Gap (vendor support model)
    ============================================================ */
-.pg-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; margin-top: 14px; }
-.pg-col { display: flex; flex-direction: column; gap: 14px; min-height: 0; }
+.pg-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; margin-top: 11px; }
+.pg-col { display: flex; flex-direction: column; gap: 12px; min-height: 0; }
 .pg-card {
   background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
-  padding: 16px 22px; box-shadow: 0 2px 12px rgba(10,20,60,.05);
+  padding: 14px 22px; box-shadow: 0 2px 12px rgba(10,20,60,.05);
   display: flex; flex-direction: column;
 }
-.pg-ch { margin-bottom: 11px; }
+.pg-ch { margin-bottom: 10px; }
 .pg-ch h2 { font-size: 25px; font-weight: 800; color: var(--navy); margin: 0; }
 .pg-ch span { display: block; font-size: 14px; color: var(--muted); margin-top: 3px; line-height: 1.25; }
 
@@ -524,11 +535,11 @@ body.present #stage { left: 0; padding: 0; }
 .pg-ded-item .dl-pct { margin-left: auto; font-weight: 800; color: var(--navy); }
 
 /* Support gap rows */
-.pg-gap { display: flex; flex-direction: column; gap: 6px; }
+.pg-gap { display: flex; flex-direction: column; gap: 5px; }
 .pg-gap-row {
   display: grid; grid-template-columns: 1fr 48px auto; align-items: center; gap: 12px;
   background: var(--card-bg); border: 1px solid var(--line); border-left: 5px solid var(--gc);
-  border-radius: 9px; padding: 7px 14px;
+  border-radius: 9px; padding: 6px 14px;
 }
 .pg-gap-row .gr-name { font-size: 17px; font-weight: 700; color: var(--ink); }
 .pg-gap-row .gr-count { background: var(--gc); color: #fff; font-weight: 800; font-size: 15px; text-align: center; border-radius: 7px; padding: 4px 0; }
@@ -549,7 +560,7 @@ body.present #stage { left: 0; padding: 0; }
 .pg-need .pn-d { font-size: 13.5px; color: var(--gray); margin-top: 4px; line-height: 1.3; }
 
 /* Technical debt */
-.pg-debts { display: flex; flex-direction: column; gap: 9px; }
+.pg-debts { display: flex; flex-direction: column; gap: 7px; }
 .pg-debt { display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start; }
 .pg-debt .pd-ic { width: 22px; height: 22px; color: var(--red); margin-top: 1px; }
 .pg-debt .pd-t { font-size: 16px; font-weight: 800; color: var(--ink); line-height: 1.1; }
@@ -564,4 +575,4 @@ body.present #stage { left: 0; padding: 0; }
 .pg-decision .pd-msg { display: block; font-size: 16px; font-weight: 600; line-height: 1.35; }
 
 /* On the Providers slide the executive banner sits inside the flow, not pinned. */
-.pg-cols + .banner.exec { position: static; margin: 14px 0 0; left: auto; right: auto; bottom: auto; padding: 16px 26px; }
+.pg-cols + .banner.exec { position: static; margin: 10px 0 0; left: auto; right: auto; bottom: auto; padding: 15px 26px; }

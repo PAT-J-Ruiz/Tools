@@ -36,7 +36,6 @@
     { slide: 'Landscape flow', key: 'flow.integD', label: 'Integrations desc', value: 'System-to-system integrations and APIs' },
     { slide: 'Landscape flow', key: 'flow.supT', label: 'Internal support title', value: 'Internal Support' },
     { slide: 'Landscape flow', key: 'flow.supD', label: 'Internal support desc', value: 'In-house teams responsible for operations and continuous support across every platform.' },
-    { slide: 'Landscape flow', key: 'flow.foot', label: 'Footer', value: 'Prepared for the Head of Technology · Landscape overview' },
 
     // Module 1 — Executive dashboard
     { slide: 'Executive Dashboard', key: 'dash.eyebrow', label: 'Eyebrow', value: 'PROCESS & PLATFORM LANDSCAPE' },
@@ -50,17 +49,12 @@
     { slide: 'Executive Dashboard', key: 'dash.kpi4lbl', label: 'KPI 4 label', value: 'Platforms without formal support' },
     { slide: 'Executive Dashboard', key: 'dash.panelPlatforms', label: 'Panel: platforms', value: 'Processes by platform' },
     { slide: 'Executive Dashboard', key: 'dash.panelSupport', label: 'Panel: support', value: 'Support heatmap' },
-    { slide: 'Executive Dashboard', key: 'dash.typemix', label: 'Type mix label', value: 'Process type mix' },
-    { slide: 'Executive Dashboard', key: 'dash.decisionTag', label: 'Banner tag', value: 'Decision ask' },
-    { slide: 'Executive Dashboard', key: 'dash.decisionMsg', label: 'Banner message', value: 'Approve a platform-by-process support matrix — defining ownership, monitoring priorities and vendor scope across integrations and automations.' },
-    { slide: 'Executive Dashboard', key: 'dash.foot', label: 'Footer', value: 'Prepared for the Head of Technology · Executive dashboard' },
 
     // Group slides — shared labels
     { slide: 'Automation slides (shared)', key: 'grp.eyebrow', label: 'Eyebrow', value: 'AUTOMATIONS' },
     { slide: 'Automation slides (shared)', key: 'grp.panelDrivers', label: 'Drivers panel title', value: 'Business drivers' },
     { slide: 'Automation slides (shared)', key: 'grp.panelAreas', label: 'Areas panel title', value: 'Business areas affected' },
     { slide: 'Automation slides (shared)', key: 'grp.hintCount', label: 'Panel hint', value: 'process count' },
-    { slide: 'Automation slides (shared)', key: 'grp.diagHead', label: 'Diagram rail head', value: 'How it works' },
     { slide: 'Automation slides (shared)', key: 'grp.execTag', label: 'Executive banner tag', value: 'Executive message' },
 
     // Module 6 — Providers & Gap (vendor support model)
@@ -85,16 +79,15 @@
     { slide: 'Providers & Gap', key: 'pg.costProposed', label: 'Cost · proposed', value: 'USD 27.0K' },
     { slide: 'Providers & Gap', key: 'pg.costIncreaseLbl', label: 'Cost · increase label', value: 'Increase' },
     { slide: 'Providers & Gap', key: 'pg.costIncrease', label: 'Cost · increase', value: '+USD 9.3K' },
-    { slide: 'Providers & Gap', key: 'pg.opexNote', label: 'Capacity · OPEX note', value: 'Additional 2026 OPEX referenced: ~USD 70K through Dec-2026.' },
     // -- HH dedication (current mix) --
     { slide: 'Providers & Gap', key: 'pg.dedHead', label: 'Dedication · title', value: 'Current HH dedication' },
     { slide: 'Providers & Gap', key: 'pg.dedSub', label: 'Dedication · subtitle', value: 'How the 360 HH/month are consumed today' },
-    { slide: 'Providers & Gap', key: 'pg.dedEvoLbl', label: 'Dedication · Evolutivos label', value: 'Evolutivos' },
-    { slide: 'Providers & Gap', key: 'pg.dedEvoPct', label: 'Dedication · Evolutivos %', value: '70' },
-    { slide: 'Providers & Gap', key: 'pg.dedCorLbl', label: 'Dedication · Correctivos label', value: 'Correctivos' },
-    { slide: 'Providers & Gap', key: 'pg.dedCorPct', label: 'Dedication · Correctivos %', value: '5' },
-    { slide: 'Providers & Gap', key: 'pg.dedOndLbl', label: 'Dedication · OnDemand label', value: 'OnDemand' },
-    { slide: 'Providers & Gap', key: 'pg.dedOndPct', label: 'Dedication · OnDemand %', value: '10' },
+    { slide: 'Providers & Gap', key: 'pg.dedEvoLbl', label: 'Dedication · Evolutive label', value: 'Evolutive' },
+    { slide: 'Providers & Gap', key: 'pg.dedEvoPct', label: 'Dedication · Evolutive %', value: '70' },
+    { slide: 'Providers & Gap', key: 'pg.dedCorLbl', label: 'Dedication · Corrective label', value: 'Corrective' },
+    { slide: 'Providers & Gap', key: 'pg.dedCorPct', label: 'Dedication · Corrective %', value: '5' },
+    { slide: 'Providers & Gap', key: 'pg.dedOndLbl', label: 'Dedication · On-demand label', value: 'On-demand' },
+    { slide: 'Providers & Gap', key: 'pg.dedOndPct', label: 'Dedication · On-demand %', value: '10' },
     { slide: 'Providers & Gap', key: 'pg.dedCybLbl', label: 'Dedication · Cyber label', value: 'Cyber' },
     { slide: 'Providers & Gap', key: 'pg.dedCybPct', label: 'Dedication · Cyber %', value: '15' },
     { slide: 'Providers & Gap', key: 'pg.dedNote', label: 'Dedication · note', value: 'Capacity is fully committed — there is no slack to formally absorb the unsupported platforms.' },
@@ -119,26 +112,24 @@
     // -- Technical debt --
     { slide: 'Providers & Gap', key: 'pg.debtHead', label: 'Tech debt · title', value: 'Technical debt' },
     { slide: 'Providers & Gap', key: 'pg.debtSub', label: 'Tech debt · subtitle', value: 'Accumulated gaps that raise operational risk' },
-    { slide: 'Providers & Gap', key: 'pg.debt1t', label: 'Tech debt · 1 title', value: 'Processes without alerting' },
-    { slide: 'Providers & Gap', key: 'pg.debt1d', label: 'Tech debt · 1 desc', value: 'Many flows have no proactive alerts, so failures are found after the business impact — not before.' },
+    { slide: 'Providers & Gap', key: 'pg.debt1t', label: 'Tech debt · 1 title', value: 'No alerts for level-1 support' },
+    { slide: 'Providers & Gap', key: 'pg.debt1d', label: 'Tech debt · 1 desc', value: 'Many flows don\'t send alerts to level-1 support, so the business notices a failure before the team can react.' },
     { slide: 'Providers & Gap', key: 'pg.debt2t', label: 'Tech debt · 2 title', value: 'Processes without logs (n8n)' },
     { slide: 'Providers & Gap', key: 'pg.debt2d', label: 'Tech debt · 2 desc', value: 'Platforms like n8n run without proper logging or traceability, making incident root-cause analysis slow.' },
     { slide: 'Providers & Gap', key: 'pg.debt3t', label: 'Tech debt · 3 title', value: 'No development standards' },
     { slide: 'Providers & Gap', key: 'pg.debt3d', label: 'Tech debt · 3 desc', value: 'No shared standards for building and handing over automations — this deepens key-person dependency and rework.' },
     // -- Decision & executive message --
     { slide: 'Providers & Gap', key: 'pg.decTag', label: 'Decision · tag', value: 'Decision ask' },
-    { slide: 'Providers & Gap', key: 'pg.decMsg', label: 'Decision · message', value: 'Approve the expanded Actus scope from 360 to 550 HH/month to regularise coverage for unsupported platforms and begin paying down technical debt.' },
+    { slide: 'Providers & Gap', key: 'pg.decMsg', label: 'Decision · message', value: 'Approve growing the Actus scope from 360 to 550 HH/month, so we can properly cover the unsupported platforms and start clearing technical debt.' },
     { slide: 'Providers & Gap', key: 'pg.execTag', label: 'Executive · tag', value: 'Executive message' },
-    { slide: 'Providers & Gap', key: 'pg.execMsg', label: 'Executive · message', value: 'The current 360 HH model is fully consumed by evolutives, correctives, on-demand and cyber — it does not formally cover the platforms and websites now running in production. More HH is what protects operational continuity.' },
-    { slide: 'Providers & Gap', key: 'pg.foot', label: 'Footer', value: 'Prepared for the Head of Technology · Providers & Gap' },
+    { slide: 'Providers & Gap', key: 'pg.execMsg', label: 'Executive · message', value: 'Right now the 360 HH are fully used by evolutive, corrective, on-demand and cyber work — there is nothing left to formally cover the platforms and websites already live in production. Adding HH is simply what keeps things running safely.' },
 
     // Module 7 — Next steps
     { slide: 'Next steps', key: 'close.eyebrow', label: 'Eyebrow', value: 'NEXT STEPS' },
     { slide: 'Next steps', key: 'close.title', label: 'Title', value: 'Where we go next' },
     { slide: 'Next steps', key: 'close.subtitle', label: 'Subtitle', value: 'Three concrete moves coming out of this landscape review' },
     { slide: 'Next steps', key: 'close.askTag', label: 'Banner tag', value: 'The ask' },
-    { slide: 'Next steps', key: 'close.askMsg', label: 'Banner message', value: 'Endorse the support matrix and area-tagging effort so we can turn this inventory into an owned, monitored operating model.' },
-    { slide: 'Next steps', key: 'close.foot', label: 'Footer', value: 'Prepared for the Head of Technology · Next steps' }
+    { slide: 'Next steps', key: 'close.askMsg', label: 'Banner message', value: 'Back the support matrix and the area-tagging work, so we can turn this inventory into an owned, monitored operating model.' }
   ];
   var TEXT_DEFAULTS = {};
   TEXT_FIELDS.forEach(function (f) { TEXT_DEFAULTS[f.key] = f.value; });
@@ -251,11 +242,15 @@
       }
       return top;
     }
-    function areaBreak(grows) {
+    function areaBreak(grows, systems) {
       var counts = {}, inf = {};
       grows.forEach(function (r) { counts[r._area] = (counts[r._area] || 0) + 1; if (r._inf) inf[r._area] = (inf[r._area] || 0) + 1; });
       return areasOrder.filter(function (a) { return counts[a]; }).map(function (a) {
-        return { area: a, count: counts[a], inferred: inf[a] || 0 };
+        var sub = grows.filter(function (r) { return r._area === a; });
+        var per = systems.map(function (s) {
+          return { system: s, count: sub.filter(function (r) { return sysKey(r.system) === sysKey(s); }).length };
+        }).filter(function (x) { return x.count > 0; });
+        return { area: a, count: counts[a], inferred: inf[a] || 0, perPlatform: per, critical: sub.filter(function (r) { return r.critico; }).length };
       });
     }
     function isNoFormal(s) { return noFormal.some(function (n) { return sysKey(n) === sysKey(s); }); }
@@ -265,7 +260,7 @@
       var grows = rows.filter(function (r) { return gc.systems.some(function (s) { return sysKey(s) === sysKey(r.system); }); });
       var copy = (data.copy && data.copy[gc.id]) || {};
       var drivers = driversTop6(grows, gc.systems).map(function (d) { return mergeObj(d, { blurb: blurbD[d.label] || '' }); });
-      var areas = areaBreak(grows).map(function (a) { return mergeObj(a, { blurb: blurbA[a.area] || '' }); });
+      var areas = areaBreak(grows, gc.systems).map(function (a) { return mergeObj(a, { blurb: blurbA[a.area] || '' }); });
       var platformTotals = gc.systems.map(function (s) {
         return {
           system: s,
@@ -342,7 +337,7 @@
     'Pentaho & Sensedia': 'ic-database',
     'BluePrism & UiPath': 'ic-bot',
     'Fluig, n8n & Power Automate': 'ic-gears',
-    'Other Scheduled Jobs': 'ic-server'
+    'GCP Process and Others': 'ic-server'
   };
 
   function esc(s) {
@@ -365,9 +360,9 @@
   function eyebrow(txt) {
     return '<div class="s-eyebrow">PATRIA · ' + esc(txt) + '</div>';
   }
+  // Footer label ("Prepared for…") removed per request; keep only the page number.
   function foot(label, page) {
-    return '<div class="foot">' + esc(label) + '</div><div class="foot-pg">' +
-      String(page).padStart(2, '0') + '</div>';
+    return '<div class="foot-pg">' + String(page).padStart(2, '0') + '</div>';
   }
 
   // ---- Module 0: Landscape flow ----
@@ -433,16 +428,6 @@
         '<div class="b-val">' + p.count + ' processes</div></div>';
     }).join('');
 
-    // type split bar + legend (percentages recomputed live from counts)
-    var seg = d.types.map(function (t, i) {
-      var pct = typePct(t.count);
-      return '<div class="seg" style="width:' + pct + '%;background:' + TYPE_COLORS[i % TYPE_COLORS.length] + '" title="' + esc(t.label) + ' ' + pct + '%"></div>';
-    }).join('');
-    var legend = d.types.map(function (t, i) {
-      return '<div class="tl"><span class="dot" style="background:' + TYPE_COLORS[i % TYPE_COLORS.length] + '"></span>' +
-        esc(t.label) + ' <b>' + t.count + ' · ' + typePct(t.count) + '%</b></div>';
-    }).join('');
-
     // support heatmap rows (per group) — the support-status column now
     // evidences which platforms are supported vs. without formal support.
     var OP_MODEL = {
@@ -455,17 +440,15 @@
       var pts = g.platformTotals || [];
       var noSup = g.noSupport || [];
       function ns(sys) { return noSup.some(function (n) { return String(n).toLowerCase() === String(sys).toLowerCase(); }); }
-      var statusCell;
-      if (g.id === 'other-jobs') {
-        statusCell = '<span class="pill a">Supported by infra teams</span>';
-      } else {
-        var ok = pts.filter(function (p) { return !ns(p.system); }).map(function (p) { return p.system; });
-        var no = pts.filter(function (p) { return ns(p.system); }).map(function (p) { return p.system; });
-        statusCell = '<div class="sup-split">';
-        if (ok.length) statusCell += '<span class="sup-chip ok"><span class="sd ok"></span>' + esc(ok.join(', ')) + ' — supported</span>';
-        if (no.length) statusCell += '<span class="sup-chip no"><span class="sd no"></span>' + esc(no.join(', ')) + ' — no formal support</span>';
-        statusCell += '</div>';
-      }
+      var ok = pts.filter(function (p) { return !ns(p.system); }).map(function (p) { return p.system; });
+      var no = pts.filter(function (p) { return ns(p.system); }).map(function (p) { return p.system; });
+      // Infra jobs are supported by internal infra teams; Airflow GCP inside this
+      // group runs without a formal model, so it surfaces as "no formal support".
+      var okSuffix = (g.id === 'other-jobs') ? ' — supported by infra teams' : ' — supported';
+      var statusCell = '<div class="sup-split">';
+      if (ok.length) statusCell += '<span class="sup-chip ok"><span class="sd ok"></span>' + esc(ok.join(', ')) + okSuffix + '</span>';
+      if (no.length) statusCell += '<span class="sup-chip no"><span class="sd no"></span>' + esc(no.join(', ')) + ' — no formal support</span>';
+      statusCell += '</div>';
       return '<tr><td><span class="h-plat">' + icon(PLATFORM_ICON[g.title] || 'ic-gears') + esc(g.title) + '</span></td>' +
         '<td>' + esc(OP_MODEL[g.id] || '') + '</td><td style="text-align:center;font-weight:700;color:var(--navy)">' + g.total + '</td>' +
         '<td>' + statusCell + '</td></tr>';
@@ -475,18 +458,17 @@
       '<div class="s-body">' +
         '<h1 class="s-title">' + esc(T('dash.title')) + '</h1>' +
         '<p class="s-sub">' + esc(T('dash.subtitle')) + '</p>' +
-        '<div class="kpi-row">' + kpiHtml + '</div>' +
-        '<div class="panels dash">' +
-          '<div class="panel"><div class="panel-head"><h2 class="panel-title">' + esc(T('dash.panelPlatforms')) + '</h2><span class="panel-hint">count</span></div>' +
-            '<div class="barlist">' + bars + '</div>' +
-          '</div>' +
-          '<div class="panel"><div class="panel-head"><h2 class="panel-title">' + esc(T('dash.panelSupport')) + '</h2><span class="panel-hint">by platform</span></div>' +
-            '<table class="heat"><thead><tr><th>Platform</th><th>Operating model</th><th style="text-align:center">Processes</th><th>Support status</th></tr></thead><tbody>' + rows + '</tbody></table>' +
-            '<div style="margin-top:12px"><div class="panel-hint" style="margin-bottom:8px">' + esc(T('dash.typemix')) + '</div>' +
-            '<div class="typesplit">' + seg + '</div><div class="typelegend">' + legend + '</div></div>' +
+        '<div class="dash-fill">' +
+          '<div class="kpi-row">' + kpiHtml + '</div>' +
+          '<div class="panels dash">' +
+            '<div class="panel"><div class="panel-head"><h2 class="panel-title">' + esc(T('dash.panelPlatforms')) + '</h2><span class="panel-hint">count</span></div>' +
+              '<div class="barlist">' + bars + '</div>' +
+            '</div>' +
+            '<div class="panel"><div class="panel-head"><h2 class="panel-title">' + esc(T('dash.panelSupport')) + '</h2><span class="panel-hint">by platform</span></div>' +
+              '<table class="heat"><thead><tr><th>Platform</th><th>Operating model</th><th style="text-align:center">Processes</th><th>Support status</th></tr></thead><tbody>' + rows + '</tbody></table>' +
+            '</div>' +
           '</div>' +
         '</div>' +
-        '<div class="banner"><span class="b-tag">' + esc(T('dash.decisionTag')) + '</span><span class="b-msg">' + esc(T('dash.decisionMsg')) + '</span></div>' +
       '</div>' + foot(T('dash.foot'), page);
   }
 
@@ -511,9 +493,14 @@
         : '';
       // On group slides the per-platform breakdown (requested) replaces the
       // one-line blurb to keep the panel within the 1080px slide height.
+      // Exception: terse single-word labels (e.g. "Audit") aren't self-
+      // explanatory, so they keep a compact muted caption — the multi-word
+      // labels already read as their own description, so they stay clean.
+      var terse = !isOther && dr.blurb && dr.label.trim().split(/\s+/).length === 1;
       return '<div class="driver ' + (isOther ? 'other' : '') + '">' +
         '<div class="rank">' + rankHtml + '</div>' +
         '<div class="d-main"><div class="d-name">' + esc(dr.label) + '</div>' +
+        (terse ? '<div class="d-blurb">' + esc(dr.blurb) + '</div>' : '') +
         (plats || crit ? '<div class="d-plats">' + plats + crit + '</div>' : '') +
         '</div>' +
         '<div class="count-chip">' + dr.count + '</div></div>';
@@ -530,14 +517,22 @@
       ? '<div class="nosup-note"><span class="ns-dot"></span> Platform without formal support · <span class="crit-mini">' + icon('ic-alert', 'cb-ic') + '</span> critical processes</div>'
       : '<div class="nosup-note"><span class="crit-mini">' + icon('ic-alert', 'cb-ic') + '</span> critical processes</div>';
 
-    // areas
+    // areas — mirror the Business Drivers logic: per-platform split + critical badge
     var areas = group.areas.map(function (a) {
       var unc = a.area === 'Unclassified';
       var iBadge = a.inferred ? ' <span class="badge-i" title="Includes ' + a.inferred + ' inferred classification' + (a.inferred > 1 ? 's' : '') + '">ⓘ</span>' : '';
+      var plats = (a.perPlatform || []).map(function (p) {
+        var ns = isNoSup(p.system);
+        return '<span class="plat-chip' + (ns ? ' nosup' : '') + '"' + (ns ? ' title="Platform without formal support"' : '') + '>' +
+          (ns ? '<span class="ns-dot"></span>' : '') + esc(p.system) + ' <b>' + p.count + '</b></span>';
+      }).join('');
+      var crit = a.critical > 0
+        ? '<span class="crit-badge" title="' + a.critical + ' critical process' + (a.critical > 1 ? 'es' : '') + '">' + icon('ic-alert', 'cb-ic') + a.critical + ' critical</span>'
+        : '';
       return '<div class="area-card ' + (unc ? 'unclassified' : '') + '" style="box-shadow: inset 6px 0 0 ' + (AREA_COLOR[a.area] || 'var(--teal)') + '">' +
         '<svg class="a-ic" style="color:' + (AREA_COLOR[a.area] || 'var(--navy)') + '"><use href="#' + (AREA_ICON[a.area] || 'ic-corporate') + '"/></svg>' +
         '<div><div class="a-name">' + esc(a.area) + iBadge + '</div>' +
-        (a.blurb ? '<div class="a-blurb">' + esc(a.blurb) + '</div>' : '') + '</div>' +
+        (plats || crit ? '<div class="d-plats">' + plats + crit + '</div>' : '') + '</div>' +
         '<div class="count-chip sub">' + a.count + '</div></div>';
     }).join('');
 
@@ -545,28 +540,20 @@
       ? '<b>' + group.critical + '</b> flagged critical'
       : 'no critical flags in source';
 
-    // Pentaho & Sensedia gets a compact lateral rail with the ETL / API flow diagrams
-    var isDiag = /pentaho/i.test(group.title);
-    var rail = isDiag ?
-      '<aside class="diag-rail">' +
-        '<div class="dr-head">' + esc(T('grp.diagHead')) + '</div>' +
-        '<figure class="dr-fig"><img src="assets/pentaho-etl.png" alt="Pentaho ETL flow: data sources, Pentaho PDI, business processes"/></figure>' +
-        '<figure class="dr-fig"><img src="assets/sensedia-etl.png" alt="Sensedia integration flow: source systems, data integration & ETL, business processes"/></figure>' +
-      '</aside>' : '';
-
     return eyebrow(T('grp.eyebrow')) +
       '<div class="s-body">' +
         '<h1 class="s-title rule">' + esc(group.title) + '</h1>' +
         '<p class="s-sub">' + esc(group.subtitle) + ' — business drivers and impacted areas</p>' +
         '<div class="kpi-badge"><div class="b-num">' + group.total + '</div>' +
           '<div class="b-txt">' + esc(group.kpiNote) + '<br>' + critLine + '</div></div>' +
-        '<div class="panels two' + (isDiag ? ' with-rail' : '') + '" style="margin-top:22px">' +
+        '<div class="panels two" style="margin-top:22px">' +
           '<div class="panel"><div class="panel-head"><h2 class="panel-title">' + esc(T('grp.panelDrivers')) + '</h2><span class="panel-hint">' + esc(T('grp.hintCount')) + ' · by platform</span></div>' +
             drivers +
             (platLegend ? '<div class="plat-legend">' + platLegend + '</div>' : '') + noSupNote +
           '</div>' +
-          '<div class="panel"><div class="panel-head"><h2 class="panel-title">' + esc(T('grp.panelAreas')) + '</h2><span class="panel-hint">' + esc(T('grp.hintCount')) + '</span></div>' + areas + '</div>' +
-          rail +
+          '<div class="panel"><div class="panel-head"><h2 class="panel-title">' + esc(T('grp.panelAreas')) + '</h2><span class="panel-hint">' + esc(T('grp.hintCount')) + '</span></div>' + areas +
+            (platLegend ? '<div class="plat-legend">' + platLegend + '</div>' : '') + noSupNote +
+          '</div>' +
         '</div>' +
         '<div class="banner exec"><span class="b-tag">' + esc(T('grp.execTag')) + '</span><span class="b-msg">' + esc(group.executiveMessage) + '</span></div>' +
       '</div>' + foot('Prepared for the Head of Technology · Automations — ' + group.title, page);
@@ -679,7 +666,6 @@
               '<div class="pg-stat-grid">' + statGrid + '</div>' +
               '<div class="pg-cost-head">' + esc(T('pg.costHead')) + '</div>' +
               '<div class="pg-cost">' + costRows + '</div>' +
-              '<div class="pg-note">' + esc(T('pg.opexNote')) + '</div>' +
             '</div>' +
             '<div class="pg-card">' +
               '<div class="pg-ch"><h2>' + esc(T('pg.dedHead')) + '</h2><span>' + esc(T('pg.dedSub')) + '</span></div>' +
